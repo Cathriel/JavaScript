@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tipos de datos</title>
+</head>
+<body>
+    <script>
+        // Cadenas o string
+        var cadena = "Ada";
+        var cadena2 = 'Lovelace';
+        var cadena3 = "Ada 'Lovelace'";
+
+        //Números
+        var entero = 3;
+        var decimal = 3.56;
+        var cientifica = 12e5;
+        var cientifica2 = 12e-5;
+
+        //Booleanos
+        var cierto = true;
+        var falso = false;
+
+        //Array
+        var lista = [1,"hola",6,8];
+
+        //Objetos
+        var animal = {nombre:"Lola", tipo:"Hamster", raza:"Ruso", edad:1};
+
+        //Operador typeof
+        alert(typeof cadena); //devuelve string
+        alert(typeof cierto); //devuelve boolean
+        alert(typeof animal); //devuelveo object
+
+        //Undefined
+        var objetoSinDefinir;
+        alert(objetoSinDefinir); //devuelve undefined
+
+        //Vacio
+        var cadena4 = "";
+        alert(cadena4);
+
+        //Null
+        var animal = null;
+        alert(animal);
+        alert(typeof animal);
+
+        //Nulos vs No definidos
+        typeof undefined; //devuelve undefined
+        typeof null; //devuelve objeto
+        null === undefined //devuelve false
+        null == undefined //devuelve true
+    </script>
+</body>
+</html>

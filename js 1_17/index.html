@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Parametros y argumentos
+        -una función puede tener cero o más parámetors
+        -parámetros son los nombres que aparecen en la definición de una función
+        -argumentos con los valores que pasamos a (y que recibe) una función
+
+        Reglas de los parámetors:
+        -no se especifica el tipo de los parámetros
+        -no se verifican los tipos de argumentos
+        -no se comprueba el número de los argumentos recibidos 
+
+        Parámetros por defecto
+        Cuando llamamos a una función con menos argumentos de los declarados. Los
+        valores quqe faltan no están definidos*/
+        function suma (a,b){
+            if(b===undefined)
+                b = 0
+            return a+b;
+        }
+        var resultado = suma(4);
+        alert(resultado);
+
+        //Parámetros por exceso
+        //Cuando llamamos a una función con más argumentos de los que ha sido declarado. Los 
+        //valores que nos llegan pueden capturarse a través de un objeto llamado arguments
+        function valores(){
+            alert("El número de argumentos es: "+arguments.length);
+            for(var i=0;i< arguments.length; i++){
+                alert("Argumento "+i+"= "+arguments[i]);
+            }
+        }
+        valores (4,6,8,2,7,5);
+    
+    </script>
+</body>
+</html>
